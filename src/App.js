@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/Header";
+import Meme from "./Components/Meme";
 
-function App() {
+export default function App() {
+  // const [isImportant, setIsImportant] = React.useState("Yes");
+  // console.log(isImportant);
+  // function handleClick() {
+  //   setIsImportant("No");
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Meme />
+      {/* <div className="state">
+        <h1 className="state-title">Is State important to know</h1>
+        <div className="state-value" onClick={handleClick}>
+          <h1>{isImportant} </h1>
+        </div>
+      </div> */}
     </div>
   );
 }
-
-export default App;
